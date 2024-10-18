@@ -1,1 +1,26 @@
-
+ <label>amount</label>
+    <input type="number" id="inp1"><br> <br>
+    <label>GST %</label>
+    <input type="number" id="inp2"><br><br>
+    <button onclick="functions()">Calculate</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <script>
+        function functions() {
+            var b = parseInt(document.getElementById("inp1").value);
+            var r = parseInt(document.getElementById("inp2").value);
+            var t = b + (b * (r / 100));
+            var g=  b*(r/100);
+            var c = b * 100 / (100 + r);
+            c = c.toFixed(2);
+            var d = c + (c * (r / 100));
+            var h=  b - c;
+            h= h.toFixed(2);
+            document.getElementById("p1").innerHTML = " Forward Amount : " + t;
+            document.getElementById("p2").innerHTML = "Forward Gst Amount : " + g;
+            document.getElementById("p3").innerHTML = "Reverse Amount : " + c;
+            document.getElementById("p4").innerHTML="Reverse Gst Amount : " + h; 
+        }
+    </script>
