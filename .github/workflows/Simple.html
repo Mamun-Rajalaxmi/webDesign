@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="age" required>
+    <button onclick="checkAge()">Submit</button>
+    <p id="result"> </p>
+    <script>
+        function checkAge() {
+            var ageInput = document.getElementById("age").value;
+            var age = parseInt(ageInput, 10);
+            if (age < 100) {
+                var cv = age - 100;
+                document.getElementById("result").innerHTML = " calculated value " + cv;
+            } else {
+                document.getElementById("result").innerHTML = "The age is  morethan 100 ";
+            }
+        }
+    </script>
+</body>
+</html>

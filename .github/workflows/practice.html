@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <input type="number" id="inp1">
+    <input type="number" id="inp2">
+    <Button onclick="functions()">calculate</Button>
+    <p id="R1">0</p>
+    <script>
+        // alert("Javascript");
+        // console.log("HTML");
+        // document.getElementById("R1").innerHTML="Rajlaxmi" ;
+        // var a=document.getElementById("R1");//.value 
+        // a.innerHTML="Rajlaxmi jkhkjhikkuk" ;
+        // a.style.color="red";
+
+
+         
+        function functions(){
+            let a= parseInt(document.getElementById("inp1").value);
+            let b= parseInt(document.getElementById("inp2").value);
+            let c= (a / b)*100;
+            document.getElementById("R1").innerHTML="The Value of C is  " + c +"%";
+        }
+    </script>
+</body>
+</html> 

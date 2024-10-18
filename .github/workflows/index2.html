@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inp1">
+    <input type="number" id="inp2">
+    <button onclick="functions()">Calculate</button>
+    <p id="p1">0</p>
+    <script>  
+        function functions(){
+
+        var a= parseInt(document.getElementById("inp1").value) ;
+        var b= parseInt(document.getElementById("inp2").value);
+       var c=a+b;
+        document.getElementById("p1").innerHTML="The Value Of C is " +c;
+        }
+        
+    </script>
+</body>
+</html>
